@@ -10,6 +10,13 @@
 		C4EA2A7E2681EE7200C6380C /* KitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EA2A742681EE7200C6380C /* KitUI.framework */; };
 		C4EA2A832681EE7200C6380C /* KitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EA2A822681EE7200C6380C /* KitUITests.swift */; };
 		C4EA2A852681EE7200C6380C /* KitUI.h in Headers */ = {isa = PBXBuildFile; fileRef = C4EA2A772681EE7200C6380C /* KitUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4EA2A982681EEBC00C6380C /* EXConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EA2A8E2681EEBB00C6380C /* EXConstraint.swift */; };
+		C4EA2A992681EEBC00C6380C /* EXView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EA2A8F2681EEBB00C6380C /* EXView.swift */; };
+		C4EA2A9B2681EEBC00C6380C /* EXStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EA2A912681EEBB00C6380C /* EXStack.swift */; };
+		C4EA2A9D2681EEBC00C6380C /* EXImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EA2A932681EEBC00C6380C /* EXImageView.swift */; };
+		C4EA2A9E2681EEBC00C6380C /* EXButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EA2A942681EEBC00C6380C /* EXButton.swift */; };
+		C4EA2AA12681EEBC00C6380C /* EXLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EA2A972681EEBC00C6380C /* EXLabel.swift */; };
+		C4EA2AA32681EF5500C6380C /* EXColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EA2AA22681EF5500C6380C /* EXColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		C4EA2A7D2681EE7200C6380C /* KitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EA2A822681EE7200C6380C /* KitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitUITests.swift; sourceTree = "<group>"; };
 		C4EA2A842681EE7200C6380C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4EA2A8E2681EEBB00C6380C /* EXConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXConstraint.swift; sourceTree = "<group>"; };
+		C4EA2A8F2681EEBB00C6380C /* EXView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXView.swift; sourceTree = "<group>"; };
+		C4EA2A912681EEBB00C6380C /* EXStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXStack.swift; sourceTree = "<group>"; };
+		C4EA2A932681EEBC00C6380C /* EXImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXImageView.swift; sourceTree = "<group>"; };
+		C4EA2A942681EEBC00C6380C /* EXButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXButton.swift; sourceTree = "<group>"; };
+		C4EA2A972681EEBC00C6380C /* EXLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXLabel.swift; sourceTree = "<group>"; };
+		C4EA2AA22681EF5500C6380C /* EXColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +85,13 @@
 		C4EA2A762681EE7200C6380C /* KitUI */ = {
 			isa = PBXGroup;
 			children = (
+				C4EA2A942681EEBC00C6380C /* EXButton.swift */,
+				C4EA2AA22681EF5500C6380C /* EXColor.swift */,
+				C4EA2A8E2681EEBB00C6380C /* EXConstraint.swift */,
+				C4EA2A932681EEBC00C6380C /* EXImageView.swift */,
+				C4EA2A972681EEBC00C6380C /* EXLabel.swift */,
+				C4EA2A912681EEBB00C6380C /* EXStack.swift */,
+				C4EA2A8F2681EEBB00C6380C /* EXView.swift */,
 				C4EA2A772681EE7200C6380C /* KitUI.h */,
 				C4EA2A782681EE7200C6380C /* Info.plist */,
 			);
@@ -147,6 +168,7 @@
 				TargetAttributes = {
 					C4EA2A732681EE7200C6380C = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					C4EA2A7C2681EE7200C6380C = {
 						CreatedOnToolsVersion = 12.5;
@@ -194,6 +216,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4EA2AA12681EEBC00C6380C /* EXLabel.swift in Sources */,
+				C4EA2A982681EEBC00C6380C /* EXConstraint.swift in Sources */,
+				C4EA2A9D2681EEBC00C6380C /* EXImageView.swift in Sources */,
+				C4EA2AA32681EF5500C6380C /* EXColor.swift in Sources */,
+				C4EA2A9E2681EEBC00C6380C /* EXButton.swift in Sources */,
+				C4EA2A992681EEBC00C6380C /* EXView.swift in Sources */,
+				C4EA2A9B2681EEBC00C6380C /* EXStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +370,7 @@
 		C4EA2A892681EE7200C6380C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +386,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.farhad.KitUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +395,7 @@
 		C4EA2A8A2681EE7200C6380C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -387,6 +419,7 @@
 		C4EA2A8C2681EE7200C6380C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = KitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +437,7 @@
 		C4EA2A8D2681EE7200C6380C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = KitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
