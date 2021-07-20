@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.source           = { :git => 'https://github.com/farhad1985/KitUI.git', :tag => s.version.to_s }
  
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '10.0'
   s.source_files = 'KitUI/**/*'
   s.exclude_files = 'KitUI/*.plist'
   s.swift_version = '5'
