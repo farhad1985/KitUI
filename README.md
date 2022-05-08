@@ -58,7 +58,6 @@ class MyViewController: UIViewController {
             .width(constant: 200)
             .height(constant: 80)
             .center(to: self.view)
-            .make()
     }
 
 }
