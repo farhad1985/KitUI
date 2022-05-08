@@ -46,7 +46,7 @@ import KitUI
 
 class MyViewController: UIViewController {
 
-    var vwMain = UIView()
+    private var vwMain = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
