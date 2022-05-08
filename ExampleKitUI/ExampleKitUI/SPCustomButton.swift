@@ -27,7 +27,6 @@ class SPCustomButton: UIView {
     func setTitle(title: String, icon: UIImage? = nil) -> SPCustomButton {
          btnShare
             .setTitle(title: title, icon: icon)
-            .make()
         
         return self
     }
@@ -39,6 +38,5 @@ class SPCustomButton: UIView {
             .setCorner(radius: 12)
             .add(base: self)
             .all(view: self)
-            .make()
     }
 }

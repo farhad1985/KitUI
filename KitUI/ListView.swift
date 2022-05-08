@@ -18,7 +18,6 @@ open class ListView: UIView, UITableViewDataSource {
         tableView
             .add(base: self)
             .all(view: self)
-            .make()
         
         tableView.dataSource = self
     }

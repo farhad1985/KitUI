@@ -9,11 +9,13 @@ import UIKit
 
 public extension UIStackView {
     
+    @discardableResult
     func stack(space: CGFloat) -> UIStackView {
         self.spacing = space
         return self
     }
     
+    @discardableResult
     func stack(axis: NSLayoutConstraint.Axis = .horizontal,
                alignment: UIStackView.Alignment = .fill,
                distribution: UIStackView.Distribution = .fill,
@@ -26,6 +28,7 @@ public extension UIStackView {
         return self
     }
     
+    @discardableResult
     func addArrange(views: UIView...) -> UIStackView {
         for v in views {
             self.addArrangedSubview(v)

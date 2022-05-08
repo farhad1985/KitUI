@@ -11,8 +11,9 @@ import UIKit
 // MARK: Constraint
 public extension UIView {
     
+    @discardableResult
     func left(to: NSLayoutAnchor<NSLayoutXAxisAnchor>,
-              constant: CGFloat = 0) -> UIView {
+              constant: CGFloat = 0) -> Self {
         
 
         self.leftAnchor
@@ -21,8 +22,9 @@ public extension UIView {
         return self
     }
     
+    @discardableResult
     func right(to: NSLayoutAnchor<NSLayoutXAxisAnchor>,
-              constant: CGFloat = 0) -> UIView {
+              constant: CGFloat = 0) -> Self {
         
         self.rightAnchor
             .constraint(equalTo: to, constant: -constant)
@@ -31,8 +33,9 @@ public extension UIView {
         return self
     }
 
+    @discardableResult
     func top(to: NSLayoutAnchor<NSLayoutYAxisAnchor>,
-              constant: CGFloat = 0) -> UIView {
+              constant: CGFloat = 0) -> Self {
         
         self.topAnchor
             .constraint(equalTo: to, constant: constant)
@@ -41,8 +44,9 @@ public extension UIView {
         return self
     }
     
+    @discardableResult
     func bottom(to: NSLayoutAnchor<NSLayoutYAxisAnchor>,
-              constant: CGFloat = 0) -> UIView {
+              constant: CGFloat = 0) -> Self {
         
         self.bottomAnchor
             .constraint(equalTo: to, constant: -constant)
@@ -51,8 +55,9 @@ public extension UIView {
         return self
     }
     
+    @discardableResult
     func centerX(to: NSLayoutAnchor<NSLayoutXAxisAnchor>,
-              constant: CGFloat = 0) -> UIView {
+              constant: CGFloat = 0) -> Self {
         
         self.centerXAnchor
             .constraint(equalTo: to, constant: constant)
@@ -61,9 +66,9 @@ public extension UIView {
         return self
     }
     
-    
+    @discardableResult
     func centerY(to: NSLayoutAnchor<NSLayoutYAxisAnchor>,
-              constant: CGFloat = 0) -> UIView {
+              constant: CGFloat = 0) -> Self {
         
         self.centerYAnchor
             .constraint(equalTo: to, constant: constant)
@@ -72,6 +77,7 @@ public extension UIView {
         return self
     }
     
+    @discardableResult
     func center(to: UIView) -> UIView {
         
         self.centerYAnchor
@@ -87,7 +93,8 @@ public extension UIView {
 
     }
     
-    func all(view: UIView) -> UIView {
+    @discardableResult
+    func all(view: UIView) -> Self {
         NSLayoutConstraint.activate([
             self.topAnchor.constraint(equalTo: view.topAnchor),
             self.rightAnchor.constraint(equalTo: view.rightAnchor),
@@ -98,7 +105,8 @@ public extension UIView {
         return self
     }
     
-    func all(view: UIView, constant: CGFloat) -> UIView {
+    @discardableResult
+    func all(view: UIView, constant: CGFloat) -> Self {
         NSLayoutConstraint.activate([
             self.topAnchor.constraint(equalTo: view.topAnchor, constant: constant),
             self.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -constant),
@@ -109,24 +117,23 @@ public extension UIView {
         return self
     }
 
-    
-    func height(constant: CGFloat) -> UIView {
+    @discardableResult
+    func height(constant: CGFloat) -> Self {
         self.heightAnchor.constraint(equalToConstant: constant).isActive = true
         return self
     }
     
-    func width(constant: CGFloat) -> UIView {
+    @discardableResult
+    func width(constant: CGFloat) -> Self {
         self.widthAnchor.constraint(equalToConstant: constant).isActive = true
         return self
     }
     
-    func ratio(constant: CGFloat) -> UIView {
+    @discardableResult
+    func ratio(constant: CGFloat) -> Self {
         self.heightAnchor.constraint(equalToConstant: constant).isActive = true
         self.widthAnchor.constraint(equalToConstant: constant).isActive = true
         return self
-    }
-
-    func make() {
     }
 }
 

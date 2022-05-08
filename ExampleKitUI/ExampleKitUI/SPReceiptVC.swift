@@ -52,11 +52,9 @@ class SPReceiptVC: UIViewController {
             .setImage(image: UIImage(named: "grayBack"))
             .add(base: self.view)
             .all(view: self.view)
-            .make()
         
         vwMain
             .setShadow(radius: 5)
-            .make()
         
         vwCard
             .setBackground(color: .white)
@@ -65,7 +63,6 @@ class SPReceiptVC: UIViewController {
             .left(to: vwMain.leftAnchor)
             .right(to: vwMain.rightAnchor)
             .bottom(to: vwMain.bottomAnchor)
-            .make()
         
         imgStateReceipt
             .setImage(image: UIImage(named: "spSuccess"))
@@ -74,7 +71,6 @@ class SPReceiptVC: UIViewController {
             .centerX(to: vwMain.centerXAnchor, constant: 10)
             .top(to: vwMain.topAnchor)
             .bottom(to: vwCard.topAnchor, constant: -48)
-            .make()
         
         lblStateReceipt
             .setColor(color: .systemGreen)
@@ -83,7 +79,6 @@ class SPReceiptVC: UIViewController {
             .add(base: vwMain)
             .top(to: imgStateReceipt.bottomAnchor, constant: 0)
             .centerX(to: vwMain.centerXAnchor)
-            .make()
         
         lblDekont
             .setColor(color: .black)
@@ -92,7 +87,6 @@ class SPReceiptVC: UIViewController {
             .add(base: vwMain)
             .top(to: lblStateReceipt.bottomAnchor, constant: 8)
             .centerX(to: vwMain.centerXAnchor)
-            .make()
         
         table
             .add(base: vwCard)
@@ -100,47 +94,38 @@ class SPReceiptVC: UIViewController {
             .left(to: vwCard.leftAnchor)
             .right(to: vwCard.rightAnchor)
             .bottom(to: vwCard.bottomAnchor)
-            .make()
         
         vwAddNumberCard
-            .setBackground(color: .red)
             .height(constant: 40)
-            .make()
         
         btnShare
             .setTitle(title: "Share")
             .height(constant: 55)
             .setShadow(radius: 8)
-            .make()
         
         btnInquery
             .setTitle(title: "Inquery")
             .height(constant: 55)
             .setShadow(radius: 8)
-            .make()
         
         btnPreview
             .setTitle(title: "Preview")
             .height(constant: 55)
             .setShadow(radius: 8)
-            .make()
         
         stActions
             .stack(distribution: .fillEqually, space: 12)
             .addArrange(views: btnShare, btnInquery)
-            .make()
 
 
         stMainAction
             .stack(axis: .vertical, alignment: .fill, space: 12)
             .addArrange(views: btnPreview, stActions)
-            .make()
 
         stMain
             .stack(axis: .vertical, alignment: .fill, space: 8)
             .addArrange(views: vwMain, vwAddNumberCard, stMainAction)
             .add(base: self.view)
             .all(view: self.view, constant: 24)
-            .make()
     }
 }

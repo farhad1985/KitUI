@@ -9,14 +9,15 @@ import UIKit
 
 public extension UIButton {
     
+    @discardableResult
     func setFont(font: UIFont) -> UIButton {
         titleLabel?
             .setFont(font: font)
-            .make()
         
         return self
     }
     
+    @discardableResult
     func setTitle(title: String = "", icon: UIImage? = nil) -> UIButton {
         self.setTitle(title, for: .normal)
         
@@ -27,22 +28,26 @@ public extension UIButton {
         return self
     }
     
+    @discardableResult
     func setColor(color: UIColor) -> UIButton {
         setTitleColor(color, for: .normal)
         return self
     }
     
+    @discardableResult
     func setColor(hex: String) -> UIButton {
         let color = UIColor.fromHex(hex: hex)
         setTitleColor(color, for: .normal)
         return self
     }
     
+    @discardableResult
     func setBackgroundColor(color: UIColor) -> UIButton {
         backgroundColor = color
         return self
     }
     
+    @discardableResult
     func setBackgroundColor(hex: String) -> UIButton {
         let color = UIColor.fromHex(hex: hex)
         backgroundColor = color

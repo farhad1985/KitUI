@@ -10,6 +10,7 @@ import UIKit
 
 public extension UIImageView {
     
+    @discardableResult
     func setImage(image: UIImage?) -> UIImageView {
         guard let img = image else { return self}
         self.image = img
