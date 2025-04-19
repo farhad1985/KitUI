@@ -6,6 +6,10 @@
  <img src="/screenshots/logo.png" align="center"  />
 </p>
 
+<a href="https://buymeacoffee.com/farhadpublw" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;">
+</a>
+
 ## Library
 If you want to write your view in the code, UIKit is so hard and complex. SwiftUi is cool but you can't use it for old projects.
 KitUI is so easy to use. you can create your View in one second :). KitUI is so suitable for old projects.
